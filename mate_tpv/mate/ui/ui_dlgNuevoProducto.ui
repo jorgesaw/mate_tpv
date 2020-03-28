@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgNuevoProducto</class>
+ <widget class="QDialog" name="dlgNuevoProducto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nuevo Producto</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblCod">
+       <property name="text">
+        <string>&amp;Código:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineCod</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineCod"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblNombre">
+       <property name="text">
+        <string>&amp;Nombre</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineNombre</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineNombre"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblCodExt">
+       <property name="text">
+        <string>C&amp;od. Externo:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineCodExt</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineCodExt"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lblPrecioCompra">
+       <property name="text">
+        <string>&amp;Precio: compra</string>
+       </property>
+       <property name="buddy">
+        <cstring>dSpinBoxPrecioCompra</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lblPrecio">
+       <property name="text">
+        <string>P&amp;recio:</string>
+       </property>
+       <property name="buddy">
+        <cstring>dSpinBoxPrecio</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="lblStock">
+       <property name="text">
+        <string>&amp;Stock</string>
+       </property>
+       <property name="buddy">
+        <cstring>spinStock</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="lblStockMin">
+       <property name="text">
+        <string>Stoc&amp; mímimo:</string>
+       </property>
+       <property name="buddy">
+        <cstring>spinStockMin</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="lblStockIdeal">
+       <property name="text">
+        <string>Stock &amp;ideal:</string>
+       </property>
+       <property name="buddy">
+        <cstring>spinStockIdeal</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="lblRubro">
+       <property name="text">
+        <string>&amp;R&amp;ubro:</string>
+       </property>
+       <property name="buddy">
+        <cstring>comboRubro</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="comboRubro"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="lblDesc">
+       <property name="text">
+        <string>&amp;Descripción:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineDesc</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="lineDesc"/>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QDoubleSpinBox" name="dSpinBoxPrecioCompra">
+         <property name="prefix">
+          <string>$ </string>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>9999.989999999999782</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QDoubleSpinBox" name="dSpinBoxPrecio">
+         <property name="prefix">
+          <string>$ </string>
+         </property>
+         <property name="maximum">
+          <double>9999.989999999999782</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="spinRatio">
+         <property name="suffix">
+          <string> %</string>
+         </property>
+         <property name="maximum">
+          <double>9999.989999999999782</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QSpinBox" name="spinStock"/>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QSpinBox" name="spinStockIdeal">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QSpinBox" name="spinStockMin">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineCod</tabstop>
+  <tabstop>lineNombre</tabstop>
+  <tabstop>lineCodExt</tabstop>
+  <tabstop>dSpinBoxPrecioCompra</tabstop>
+  <tabstop>dSpinBoxPrecio</tabstop>
+  <tabstop>spinRatio</tabstop>
+  <tabstop>spinStock</tabstop>
+  <tabstop>spinStockMin</tabstop>
+  <tabstop>spinStockIdeal</tabstop>
+  <tabstop>comboRubro</tabstop>
+  <tabstop>lineDesc</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>dlgNuevoProducto</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>dlgNuevoProducto</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineCod</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineNombre</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineNombre</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineCodExt</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineCod</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineNombre</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineNombre</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineCodExt</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>422</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineCodExt</sender>
+   <signal>returnPressed()</signal>
+   <receiver>dSpinBoxPrecioCompra</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineCodExt</sender>
+   <signal>returnPressed()</signal>
+   <receiver>dSpinBoxPrecioCompra</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>100</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

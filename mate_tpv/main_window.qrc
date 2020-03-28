@@ -1,0 +1,19 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="favicon.png">img/mate_tpv.png</file>
+    <file alias="file.png">img/file_32x32.png</file>
+    <file alias="game.png">img/game_32x32.png</file>
+    <file alias="persona.png">img/persona_32x32.png</file>
+    <file alias="quit.png">img/quit.png</file>
+    <file alias="help.png">img/help.png</file>
+    <file alias="printer.png">img/printer.png</file>
+    <file alias="find.png">img/find_32x32.png</file>
+    <file alias="close.png">img/close.png</file>
+    <file alias="sorteos.png">img/sorteos.png</file>
+	<file alias="fondo_abstracto.png">img/fondo_abstracto.png</file>
+	<file alias="checkbox.png">img/checkbox.png</file>
+	<file alias="down_arrow.png">img/down_arrow.png</file>
+	<file alias="handle.png">img/handle.png</file>
+	<file alias="up_arrow.png">img/up_arrow.png</file>
+</qresource>
+</RCC>
